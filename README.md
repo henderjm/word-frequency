@@ -1,6 +1,7 @@
 # word-frequency
 
 ## Usage
+```
 Usage:
   word-frequency [OPTIONS]
 
@@ -10,5 +11,5 @@ Application Options:
 
 Help Options:
   -h, --help             Show this help message
-
+```
 `go run main.go -n 5 -i "21721040"`
