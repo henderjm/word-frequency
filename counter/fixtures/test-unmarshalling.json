@@ -1,0 +1,18 @@
+{
+  "batchcomplete": "batch is complete",
+  "warnings": {
+    "extracts": {
+      "*": "\"exlimit\" was too large for a whole article extracts request, lowered to 1."
+    }
+  },
+  "query": {
+    "pages": {
+      "21721040": {
+        "pageid": "some-id",
+        "ns": 0,
+        "title": "Test UnMarshall",
+        "extract": "Test extract"
+      }
+    }
+  }
+}
