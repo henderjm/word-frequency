@@ -21,3 +21,7 @@ Help Options:
 
 ## Use provided stable binary
 * run "./word-frequency-osx -n 5 -i 21721040"
+
+## Running tests
+* Download [ginkgo](https://onsi.github.io/ginkgo/) binary `go get github.com/onsi/ginkgo/ginkgo` 
+* `ginkgo -r ./`
