@@ -36,6 +36,7 @@ steps:
         dep ensure
     fi
     go build -v .
-    echo ${TEST}
+    echo "build" >> $GOPATH/dummy_file
+    cat $GOPATH/dummy_file
   workingDirectory: '$(modulePath)'
   displayName: 'Get dependencies, then build'
