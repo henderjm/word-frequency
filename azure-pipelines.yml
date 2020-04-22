@@ -14,7 +14,7 @@ variables:
   GOROOT: '/usr/local/go1.11' # Go installation path
   GOPATH: '$(system.defaultWorkingDirectory)/gopath' # Go workspace path
   modulePath: '$(GOPATH)/src/github.com/$(build.repository.name)' # Path to the module's code
-  REF_VALUE: $(TEST)
+  TEST: override_value
 
 steps:
 - script: |
@@ -36,6 +36,6 @@ steps:
         dep ensure
     fi
     go build -v .
-    echo ${REF_VALUE}
+    echo ${TEST}
   workingDirectory: '$(modulePath)'
   displayName: 'Get dependencies, then build'
