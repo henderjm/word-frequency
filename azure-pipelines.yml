@@ -36,6 +36,6 @@ steps:
         dep ensure
     fi
     go build -v .
-    echo ${TEST}
+    echo ${REF_VALUE}
   workingDirectory: '$(modulePath)'
   displayName: 'Get dependencies, then build'
